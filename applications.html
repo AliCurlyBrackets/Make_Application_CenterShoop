@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> متجر التطبيقات </title>
+  <link rel="stylesheet" href="applications/css/Applications.css?v=1">
+  <link rel="stylesheet" href="applications/css/popup.css">
+  <link rel="stylesheet" href="applications/css/Search.css?v=1">
+  <link rel="icon" href="applications/images/Applications CeterShoop.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <strong class="text-dark Hi"> Hi </strong> <span
+        class="text-dark ms-1 Hi"> Admin </span>
+      <div class=" navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="mt-md-0 mt-sm-4">
+            <div class="search-wrapper">
+              <div class="input-holder">
+                <form action="">
+                  <input type="text" class="search-input" placeholder="Type to search" />
+                </form>
+                <button class="search-icon" onclick="searchToggle(this, event);"> <i class="fa fa-search"></i> </button>
+              </div>
+              <span class="close" onclick="searchToggle(this, event);"></span </li>
+        </ul>
+      </div>
+    </div>
+      <a href="index.html">
+        <img src="applications/images/Applications CeterShoop.png" class="d-ms-block  LOGO" width="300" alt="">
+      </a>
+  </nav>
+
+  <!-- Statr Card Analisys -->
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="card bg-warning p-3 analysis animation4">
+          <div class="icon">
+              <i class="fa-solid fa-users-gear text-white text-end d-block"></i>
+          </div>
+          <h5 class="text-center mb-2 mt-2 text-white"> عدد المستخدمين للتطبيقات  </h5>
+          <h5 class="text-center mt-2 text-white"> 22 </h5>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card bg-danger p-3 analysis animation3">
+          <div class="icon">
+              <i class="fa-solid fa-tablet-screen-button text-white text-end d-block"></i>
+          </div>
+          <h5 class="text-center mb-2 mt-2 text-white">   عدد التطبيقات الغير مثيته </h5>
+          <h5 class="text-center mt-2 text-white"> 30 </h5>
+        </div>
+      </div>
+
+
+      <div class="col-md-3">
+        <div class="card bg-success p-3 analysis animation2">
+          <div class="icon">
+              <i class="fa-solid fa-person-circle-check text-white text-end d-block"></i>
+          </div>
+          <h5 class="text-center mb-2 text-white"> عدد التطبيقات المثبته </h5>
+          <h5 class="text-center mt-2 text-white"> 25 </h5>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="card bg-info p-3 analysis animation1">
+          <div class="icon">
+              <i class="fa-brands fa-app-store-ios text-white text-end d-block"></i>
+          </div>
+          <h5 class="text-center mb-2 text-white"> عدد التطبيقات  </h5>
+          <h5 class="text-center mt-2 text-white"> 100 </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Start Applications -->
+
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="card p-3 app_card">
+                <div class="row">
+                    <div class="col-10">
+                      <span class="badge bg-danger rounded-pill d-block  p-2"></span>
+                        <h5 class="text-end mt-4"> Google Tag Manager </h5>
+                        <p class="text-end"> Google Tag Manager هو برنامج مجانيّ تقدمه شركة Google لتتحكم بالأكواد التي يمكن أن تضيفها في موقعك الإلكتروني، ويساعدك على تحليل سلوك زوار موقعك</p>
+                        <div class="review text-end">
+                          <span> عدد التقيمات (10) </span>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                        </div>
+                      </div>
+                    <div class="col-2">
+                      <img src="applications/images/App_Icon/tag_manage.jpeg" class="d-block ms-auto"  width="80" alt="">
+                      <p class="text-center mt-2"> مجاني </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-6">
+                    <button class="btn btn-danger d-block m-auto" disabled>  الغاء تفعيل للمستحدمين </button>
+                  </div>
+                  <div class="col-6">
+                      <button class="btn btn-primary d-block m-auto"> تفعيل للمستحدمين </button>
+                  </div>
+              </div>
+              </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="card p-3 app_card">
+              <div class="row">
+                  <div class="col-10  ">
+                    <span class="badge bg-danger rounded-pill d-block  p-2"></span>
+                      <h5 class="text-end mt-4"> Google Merchant Center  </h5>
+                      <p class="text-end"> Google Merchant Center أداة تتيح لك عرض منتجاتك على أدوات Google، وهي أداة أساسية لتحسين ظهور منتجاتك في نتائج البحث، وتمكين المستخدمين من الوصول إلى معلومات كافية حول منتجات متجرك واستكشافها وشراؤها، وتعتبر أداة تكميلية لـ Google Ads.</p>
+                      <div class="review text-end">
+                        <span> عدد التقيمات (10) </span>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                      </div>
+                    </div>
+                  <div class="col-2">
+                    <img src="applications/images/App_Icon/merchant center.png" class="d-block"  width="80" alt="">
+                    <p class="text-center mt-2"> مجاني </p>
+                  </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-6">
+                  <button class="btn btn-danger d-block m-auto" disabled>  الغاء تفعيل للمستحدمين </button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-primary d-block m-auto"> تفعيل للمستحدمين </button>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+     
+  </div>
+
+  <script src="applications/js/Search.js"></script>
+</body>
+
+</html>

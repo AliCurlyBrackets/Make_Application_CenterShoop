@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+:root {
+  --c-white-01: #fff;
+  --c-white-02: #e1dec4;
+  --c-brown-01: #A6713F;
+  --c-brown-01-hover: #bd844e;
+  --c-dark-blue-01: #161434;
+  --c-dark-blue-01-hover: #373370;
+  --c-light-blue-01: #898FA0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: var(--c-white-02);
+}
+
+h2 {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--c-dark-blue-01);
+}
+
+h4 {
+  margin: 0;
+  color: var(--c-light-blue-01);
+}
+
+p {
+  color: var(--c-dark-blue-01);
+  line-height: 1.7rem;
+}
+
+#close-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 99;
+  margin: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+#close-icon:hover > svg {
+  color: var(--c-dark-blue-01-hover);
+}
+
+#close-icon svg {
+  color: var(--c-dark-blue-01);
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease-in;
+}
+
+.svg-container {
+  padding: 2rem;
+  /* background: var(--c-light-blue-01); */
+  background: #fff;
+  clip-path: polygon(100% 0, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0 90%, 0 0);
+}
+
+.svg-container svg {
+  width: 100%;
+  height: 7rem;
+}
+
+#openIcon {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  margin: 20% auto 0 auto;
+  padding: 10px 30px;
+  border: 0;
+  background: var(--c-brown-01);
+  color: white;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-shadow: 8px 10px 24px -8px var(--c-brown-01);
+  transition: all .4s ease-out;
+}
+
+#openIcon:hover {
+  background: var(--c-brown-01-hover);
+}
+
+#popover {
+  text-align: center;
+  width: 70vw;
+  max-width: 735px;
+  overflow: hidden;
+  opacity 0:
+  transition: all .5s ease-out;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  
+  &:popover-open {
+    opacity: 1;
+    animation: slide .5s ease-out;
+  }
+}
+
+#popover::backdrop {
+  background: var(--c-white-02);
+  background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}

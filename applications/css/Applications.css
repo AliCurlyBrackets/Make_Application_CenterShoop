@@ -1,0 +1,121 @@
+*{
+    font-family: cairo;
+}
+@font-face {
+    font-family:cairo;
+    src: url('../fonts/Cairo-Bold.ttf');
+}
+body{
+    overflow-x: hidden;
+}
+.Header{
+    height: 100vh;
+    background-image:url("../images/bg.png") ;
+    background-size: cover; 
+    overflow: hidden;
+}
+
+.app_title {
+    font-size: 80px;
+    color: #6689f7;
+    margin-top: 140px;
+}
+
+
+.app_title_info{
+    font-size: 30px;
+    width: 520px;
+    text-align: end !important;
+    line-height: 60px;
+}
+
+.app_title_interface a{
+    text-decoration: none;
+}
+
+img.app_image {
+    margin-left: -100%;
+    animation-name: App_Image;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    width:640px;
+}
+
+
+
+.analysis{
+    position: relative;
+    top: -280px;
+}
+
+.analysis .icon i{
+    font-size: 30px;
+}
+
+.analysis.animation1{
+    animation-name: Card_analysis;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+.analysis.animation2{
+    animation-name: Card_analysis;
+    animation-duration: .5s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+
+.analysis.animation3{
+    animation-name: Card_analysis;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.analysis.animation4{
+    animation-name: Card_analysis;
+    animation-duration: .5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+.app_card{
+    position: relative;
+    height: 300px;
+}
+.app_card p{
+    direction: rtl;
+}
+
+.app_card .badge{
+    position: absolute;
+    top: -6px;
+    left: -5px;
+}
+
+
+
+
+@keyframes App_Image {
+    from{ margin-left: -100%;}
+    to{ margin-left: 0;}
+}
+
+@keyframes app_title_interface {
+    from{margin-right: -200%;}
+    to{margin-right: 0;}
+}
+
+
+@keyframes Card_analysis {
+    from{top: -280px;}
+    to{top: 0;}
+}
+
+
+@media(max-width:600px){
+    .app_card{
+        position: relative;
+        height: auto;
+    }
+}
